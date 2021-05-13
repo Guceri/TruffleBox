@@ -1,4 +1,7 @@
-# Project Init
+## Project Init
+
+![](public/eth.png)
+
 I created this project as a quicker starting point for solidity projects. It combines 3 major frameworks that are used together:
 - React
 - Truffle (including standard changes to truffle-config.js)
@@ -13,7 +16,7 @@ Additionally, packages that are staples and used often throughout projects are a
 - bootstrap
 - babel (ES6 integration for Javascript)
 
-Instructions:
+## Instructions
 1.  clone repository or download a local copy
 2.  type npm install in the project directory to install package.json packages
 3.  configure .env file (rename & set API keys, Mnemonics, etc.)
