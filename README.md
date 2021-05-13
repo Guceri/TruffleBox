@@ -27,5 +27,5 @@ npm install
 ```
 3.  configure .env file (rename & set API keys, Mnemonics, etc.)
       - Mnemonic seed phrase from MetaMask account [link](https://metamask.io/)
-      - <img src="public/infura.png" width="10" > API key from Infura [link](https://infura.io/)
+      - <img src="public/infura.png" width="20" > API key from Infura [link](https://infura.io/)
 4.  make adjustments to truffle-config.js as needed (ie. compiler version)
