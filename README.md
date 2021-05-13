@@ -14,9 +14,15 @@ Additionally, packages that are staples and used often throughout projects are a
 - moment
 - bootstrap
 - babel (ES6 integration for Javascript)
-
+##
 ## Instructions
 1.  clone repository or download a local copy
-2.  type npm install in the project directory to install package.json packages
+```
+git clone https://github.com/Guceri/project-init EthereumProject
+```
+2.  navigate to project directory to install package.json packages
+```
+npm install
+```
 3.  configure .env file (rename & set API keys, Mnemonics, etc.)
 4.  make adjustments to truffle-config.js as needed
