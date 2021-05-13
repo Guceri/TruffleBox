@@ -13,19 +13,20 @@ class App extends Component {
   async loadWeb3() {
 
     if (window.ethereum) {
-      window.web3 = new Web3(window.ethereum)
+      window.web3 = new Web3(window.ethereum) 
     }else {
       window.alert('Please install MetaMask')
       window.location.assign("https://metamask.io/")
     }
 
+    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' }); 
+    console.log(accounts)
+    const account = await accounts[0]
+    this.setState({ account })  
+
     const networkId = await window.ethereum.request({ method: 'net_version' })
     const networkName = this.networkNames[networkId]
-    this.setState({ networkName })
-
-    const accounts = await window.ethereum.request({ method: 'eth_accounts' });
-    const account = await accounts[0]
-    this.setState({ account })
+    this.setState({ networkName }) 
 
     //refresh page on network change event
     window.ethereum.on('chainChanged', () => {
@@ -34,7 +35,7 @@ class App extends Component {
 
     //refresh user account on account change event
     window.ethereum.on('accountsChanged', async () => {
-      const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+      const accounts = await window.ethereum.request({ method: 'eth_accounts' })
       const account = await accounts[0]
       if(typeof account !== 'undefined'){
         this.setState({ account })
@@ -68,7 +69,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={eth} alt="eth"/> 
+          <img src={eth} alt="logo"/> 
           <p>
             Blockchain Development On: {this.state.networkName}
           </p>
