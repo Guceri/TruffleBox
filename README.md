@@ -25,4 +25,6 @@ git clone https://github.com/Guceri/project-init EthereumProject
 npm install
 ```
 3.  configure .env file (rename & set API keys, Mnemonics, etc.)
-4.  make adjustments to truffle-config.js as needed
+      - Mnemonic seed phrase from MetaMask account
+      - API key from Infura [link](https://infura.io/)
+4.  make adjustments to truffle-config.js as needed (ie. compiler version)
