@@ -5,7 +5,7 @@ I created this repository as a quicker starting point for solidity projects. It 
 - <img src="public/react.png" width="20" > [React](https://reactjs.org/) -> front-end
 - <img src="public/truffle.png" width="20" > [Truffle](https://www.trufflesuite.com/truffle) -> solidity development (including network defaults to truffle-config.js)
 - <img src="public/metamask.png" width="20" > [MetaMask](https://metamask.io/) -> web3 connectivity
-- <img src="public/ganache.png" width="20" > [Ganache](https://www.trufflesuite.com/ganache) -> development 
+- <img src="public/ganache.png" width="30" > [Ganache](https://www.trufflesuite.com/ganache) -> development 
 ##
 Additionally, packages that are staples and used often throughout projects are also embedded:
 - dotenv (.env file integration)
