@@ -18,9 +18,9 @@ class App extends Component {
       window.alert('Please install MetaMask')
       window.location.assign("https://metamask.io/")
     }
-
+    
+    //make metaMask pop up to log into
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' }); 
-    console.log(accounts)
     const account = await accounts[0]
     this.setState({ account })  
 
