@@ -1,7 +1,7 @@
 ## Project Init
 
 ![](public/eth.png)
-
+##
 I created this project as a quicker starting point for solidity projects. It combines 3 major frameworks that are used together:
 - React
 - Truffle (including standard changes to truffle-config.js)
