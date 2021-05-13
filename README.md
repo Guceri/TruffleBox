@@ -29,3 +29,7 @@ npm install
       - rename file to .env
       - configure API keys & Mnemonics
 4.  make adjustments to truffle-config.js as needed (ie. compiler version)
+5.  run smoke test
+```
+npm start
+```
