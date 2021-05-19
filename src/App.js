@@ -10,10 +10,13 @@ class App extends Component {
     
     if (window.ethereum) {
       window.web3 = new Web3(window.ethereum) 
+      
     }else {
       window.alert('Please install MetaMask')
       window.location.assign("https://metamask.io/")
     }
+
+    const web3 = window.web3
     
     //make metaMask pop up to log into
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' }); 
