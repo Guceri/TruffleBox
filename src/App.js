@@ -26,6 +26,13 @@ class App extends Component {
 
     /*
     INSERT INSTANCE OF CONTRACTS HERE
+    const MYTokenData = MyToken.networks[networkId]
+    if(MyTokenData) {
+      const MyToken = new web3.eth.Contract(MyToken.abi, MyTokenData.address)
+      this.setState({ MyToken })
+    } else {
+      window.alert('MyToken contract not deployed to detected network.')
+    }
     */
    
     //refresh page on network change event
