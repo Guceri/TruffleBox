@@ -24,6 +24,10 @@ class App extends Component {
     const networkName = this.networkNames[networkId]
     this.setState({ networkName }) 
 
+    /*
+    INSERT INSTANCE OF CONTRACTS HERE
+    */
+   
     //refresh page on network change event
     window.ethereum.on('chainChanged', () => {
       window.location.reload()
