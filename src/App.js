@@ -53,6 +53,9 @@ class App extends Component {
         this.setState({ account })
       }
     })
+
+    this.setState({ loading: false })
+
   }
 
   networkNames = {
@@ -68,11 +71,19 @@ class App extends Component {
     super(props)
     this.state = {
       account: '',
-      networkName: ''
+      networkName: '',
+      loading: true
     }
   }
 
   render() {
+    if(this.state.loading){
+      return (
+        <div className="App">
+          <h2>Loading...</h2>
+        </div>
+      )
+    }
     return (
       <div className="App">
         <header className="App-header">
