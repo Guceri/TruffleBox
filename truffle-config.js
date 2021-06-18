@@ -19,7 +19,7 @@ module.exports = {
       timeoutBlocks: 200,  
       skipDryRun: true     
     },
-    matic: {
+    matic: { //Not yet tested
       provider: () => new HDWalletProvider(mnemonic, `https://rpc-mumbai.matic.today`),
       network_id: 80001,
       confirmations: 2,
